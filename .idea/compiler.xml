@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="usuario-service" />
+        <module name="config-service" />
+        <module name="moto-service" />
+        <module name="auto-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auto-service" target="11" />
+      <module name="config-service" target="11" />
+      <module name="moto-service" target="11" />
+      <module name="usuario-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auto-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
+      <module name="moto-service" options="-parameters" />
+      <module name="usuario-service" options="-parameters" />
+    </option>
+  </component>
+</project>
