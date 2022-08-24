@@ -12,12 +12,14 @@
         <module name="config-service" />
         <module name="moto-service" />
         <module name="auto-service" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="auto-service" target="11" />
       <module name="config-service" target="11" />
       <module name="eureka-service" target="11" />
+      <module name="gateway-service" target="11" />
       <module name="moto-service" target="11" />
       <module name="usuario-service" target="11" />
     </bytecodeTargetLevel>
@@ -27,6 +29,7 @@
       <module name="auto-service" options="-parameters" />
       <module name="config-service" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="moto-service" options="-parameters" />
       <module name="usuario-service" options="-parameters" />
     </option>
