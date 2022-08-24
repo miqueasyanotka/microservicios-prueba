@@ -1,3 +1,4 @@
+
 server:
   port: 9090
 eureka:
@@ -5,26 +6,26 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http//localhost:8761/eureka
+      default-zone: http://localhost:8761/eureka
     instance:
       hostname: localhost
 
-  spring:
-    cloud:
-      gateway:
-        discovery:
-          locator:
-            enabled: true
-        routes:
-          - id: usuario-service
-            uri: lb://usuario-service
-            predicates:
-              - Path=/usuario/**
-          - id: auto-service
-            uri: lb://auto-service
-            predicates:
-              - Path=/auto/**
-          - id: moto-service
-            uri: lb://moto-service
-            predicates:
-              - Path=/moto/**
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: usuario-service
+          uri: lb://usuario-service
+          predicates:
+            - Path=/usuario/**
+        - id: auto-service
+          uri: lb://auto-service
+          predicates:
+            - Path=/auto/**
+        - id: moto-service
+          uri: lb://moto-service
+          predicates:
+            - Path=/moto/**
